@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - pickle@130.211.255.55" uuid="817c1a7d-966d-4ecb-b904-a6be9293399d">
+      <secret-storage>master_key</secret-storage>
+      <user-name>pickle</user-name>
+      <schema-pattern>pickle.*</schema-pattern>
+      <default-schemas>pickle.*</default-schemas>
+    </data-source>
+  </component>
+</project>
