@@ -5,7 +5,7 @@ import javax.persistence.Id;
 import java.io.Serializable;
 
 /**
- * Created by andrikurniawan.id@gmail.com on 3/17/2016.
+ * Created by andrikurniawan.id@gmail.com on 3/23/2016.
  */
 public class LanggananEntityPK implements Serializable {
     private int idbank;

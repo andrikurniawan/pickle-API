@@ -3,10 +3,10 @@ package com.pickle.Domain;
 import javax.persistence.*;
 
 /**
- * Created by andrikurniawan.id@gmail.com on 3/17/2016.
+ * Created by andrikurniawan.id@gmail.com on 3/23/2016.
  */
 @Entity
-@Table(name = "user", schema = "pickle")
+@Table(name = "user", schema = "pickle", catalog = "")
 public class UserEntity {
     private int id;
     private String nama;

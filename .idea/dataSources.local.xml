@@ -7,5 +7,11 @@
       <schema-pattern>pickle.*</schema-pattern>
       <default-schemas>pickle.*</default-schemas>
     </data-source>
+    <data-source name="MySQL - pickle@localhost" uuid="0579b0dc-e60c-4ecf-84a7-62b03250169d">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>pickle.*</schema-pattern>
+      <default-schemas>pickle.*</default-schemas>
+    </data-source>
   </component>
 </project>

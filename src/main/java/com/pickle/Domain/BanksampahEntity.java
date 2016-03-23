@@ -3,10 +3,10 @@ package com.pickle.Domain;
 import javax.persistence.*;
 
 /**
- * Created by andrikurniawan.id@gmail.com on 3/17/2016.
+ * Created by andrikurniawan.id@gmail.com on 3/23/2016.
  */
 @Entity
-@Table(name = "banksampah", schema = "pickle", catalog = "")
+@Table(name = "banksampah", schema = "pickle")
 public class BanksampahEntity {
     private int id;
     private String nama;
@@ -16,6 +16,7 @@ public class BanksampahEntity {
     private String locationLng;
     private String locationName;
     private String locationDesc;
+    private String password;
 
     @Id
     @Column(name = "id")
@@ -48,7 +49,7 @@ public class BanksampahEntity {
     }
 
     @Basic
-    @Column(name = "phoneNumber")
+    @Column(name = "phonenumber")
     public String getPhoneNumber() {
         return phoneNumber;
     }
@@ -58,7 +59,7 @@ public class BanksampahEntity {
     }
 
     @Basic
-    @Column(name = "locationLat")
+    @Column(name = "locationlat")
     public String getLocationLat() {
         return locationLat;
     }
@@ -68,7 +69,7 @@ public class BanksampahEntity {
     }
 
     @Basic
-    @Column(name = "LocationLng")
+    @Column(name = "locationlng")
     public String getLocationLng() {
         return locationLng;
     }
@@ -78,7 +79,7 @@ public class BanksampahEntity {
     }
 
     @Basic
-    @Column(name = "locationName")
+    @Column(name = "locationname")
     public String getLocationName() {
         return locationName;
     }
@@ -88,13 +89,23 @@ public class BanksampahEntity {
     }
 
     @Basic
-    @Column(name = "LocationDesc")
+    @Column(name = "locationdesc")
     public String getLocationDesc() {
         return locationDesc;
     }
 
     public void setLocationDesc(String locationDesc) {
         this.locationDesc = locationDesc;
+    }
+
+    @Basic
+    @Column(name = "password")
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override
@@ -112,6 +123,7 @@ public class BanksampahEntity {
         if (locationLng != null ? !locationLng.equals(that.locationLng) : that.locationLng != null) return false;
         if (locationName != null ? !locationName.equals(that.locationName) : that.locationName != null) return false;
         if (locationDesc != null ? !locationDesc.equals(that.locationDesc) : that.locationDesc != null) return false;
+        if (password != null ? !password.equals(that.password) : that.password != null) return false;
 
         return true;
     }
@@ -126,6 +138,7 @@ public class BanksampahEntity {
         result = 31 * result + (locationLng != null ? locationLng.hashCode() : 0);
         result = 31 * result + (locationName != null ? locationName.hashCode() : 0);
         result = 31 * result + (locationDesc != null ? locationDesc.hashCode() : 0);
+        result = 31 * result + (password != null ? password.hashCode() : 0);
         return result;
     }
 }

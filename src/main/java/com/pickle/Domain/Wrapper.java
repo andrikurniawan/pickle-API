@@ -1,7 +1,7 @@
 package com.pickle.Domain;
 
 /**
- * Created by andrikurniawan.id@gmail.com on 3/17/2016.
+ * Created by andrikurniawan.id@gmail.com on 3/23/2016.
  */
 public class Wrapper {
     private int status;
@@ -19,14 +19,13 @@ public class Wrapper {
         return message;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
+    public void setMessage(String message) { this.message = message; }
 
     public Wrapper() {
     }
 
     public Wrapper(int status, String message) {
+
         this.status = status;
         this.message = message;
     }
