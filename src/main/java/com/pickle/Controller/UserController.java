@@ -23,9 +23,9 @@ public class UserController{
     public Wrapper login(@RequestParam("email")String email){
         UserEntity user = userService.validation(email);
         if(user == null){
-            return new Wrapper(200, "Gagal");
+            return new Wrapper(200, "Gagal", null);
         }else{
-            return new Wrapper(200, "Sukses");
+            return new Wrapper(200, "Sukses", null);
         }
     }
 }

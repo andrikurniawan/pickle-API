@@ -6,7 +6,7 @@ import javax.persistence.*;
  * Created by andrikurniawan.id@gmail.com on 3/23/2016.
  */
 @Entity
-@Table(name = "transaksi", schema = "pickle", catalog = "")
+@Table(name = "transaksi", schema = "pickle")
 public class TransaksiEntity {
     private int id;
     private int idUser;
@@ -31,7 +31,7 @@ public class TransaksiEntity {
     }
 
     @Basic
-    @Column(name = "idUser")
+    @Column(name = "iduser")
     public int getIdUser() {
         return idUser;
     }
@@ -41,7 +41,7 @@ public class TransaksiEntity {
     }
 
     @Basic
-    @Column(name = "idBank")
+    @Column(name = "idbank")
     public int getIdBank() {
         return idBank;
     }
@@ -91,7 +91,7 @@ public class TransaksiEntity {
     }
 
     @Basic
-    @Column(name = "sampahPlastik")
+    @Column(name = "sampahplastik")
     public String getSampahPlastik() {
         return sampahPlastik;
     }
@@ -101,7 +101,7 @@ public class TransaksiEntity {
     }
 
     @Basic
-    @Column(name = "sampahBotol")
+    @Column(name = "sampahbotol")
     public String getSampahBotol() {
         return sampahBotol;
     }
@@ -111,7 +111,7 @@ public class TransaksiEntity {
     }
 
     @Basic
-    @Column(name = "sampahBesi")
+    @Column(name = "sampahbesi")
     public String getSampahBesi() {
         return sampahBesi;
     }
@@ -121,7 +121,7 @@ public class TransaksiEntity {
     }
 
     @Basic
-    @Column(name = "sampahKertas")
+    @Column(name = "sampahkertas")
     public String getSampahKertas() {
         return sampahKertas;
     }

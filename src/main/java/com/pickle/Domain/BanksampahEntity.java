@@ -1,5 +1,7 @@
 package com.pickle.Domain;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.*;
 
 /**
@@ -100,6 +102,7 @@ public class BanksampahEntity {
 
     @Basic
     @Column(name = "password")
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     public String getPassword() {
         return password;
     }
@@ -141,4 +144,5 @@ public class BanksampahEntity {
         result = 31 * result + (password != null ? password.hashCode() : 0);
         return result;
     }
+
 }

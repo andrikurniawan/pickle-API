@@ -48,7 +48,7 @@ public class UserEntity {
     }
 
     @Basic
-    @Column(name = "phoneNumber")
+    @Column(name = "phonenumber")
     public String getPhoneNumber() {
         return phoneNumber;
     }

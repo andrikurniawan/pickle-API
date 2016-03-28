@@ -26,7 +26,7 @@ public class WithdrawEntity {
     }
 
     @Basic
-    @Column(name = "idUser")
+    @Column(name = "iduser")
     public int getIdUser() {
         return idUser;
     }
@@ -36,7 +36,7 @@ public class WithdrawEntity {
     }
 
     @Basic
-    @Column(name = "idBank")
+    @Column(name = "idbank")
     public int getIdBank() {
         return idBank;
     }

@@ -35,7 +35,7 @@ public class LanggananEntity {
     }
 
     @Basic
-    @Column(name = "langgananSejak")
+    @Column(name = "langganansejak")
     public long getLanggananSejak() {
         return langgananSejak;
     }
@@ -45,7 +45,7 @@ public class LanggananEntity {
     }
 
     @Basic
-    @Column(name = "transaksiPertama")
+    @Column(name = "transaksipertama")
     public long getTransaksiPertama() {
         return transaksiPertama;
     }
